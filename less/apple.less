@@ -1,0 +1,318 @@
+@hh:44px;
+@hbw:1000px;
+@hsw:768px;
+
+body,ul,li,a{
+  padding: 0;
+  margin: 0;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  background: #F2F2F2;
+}
+img{
+  border: 0;
+}
+.h_icon(){
+  .h_apple,.h_search,.h_gouwudai,.h_close{
+    font-size: 20px;
+  }
+}
+.clf:before,.clf:after{
+  content: "";
+  display: block;
+  clear: both;
+  line-height: 0;
+  font-size: 0;
+}
+.margin(@he){
+  margin:0 auto;
+  line-height:@he;
+  color: #fff;
+  a{
+    color: #fff;
+  }
+}
+
+//头部
+.hander{
+  height: @hh;
+  background: #000;
+  opacity: 0.8;
+  /*输入框*/
+.h_ss{
+  display: none;
+}
+  .h_sr_jb{
+
+  }
+  @media screen and (min-width: 1000px) {
+    .h_zhong {
+      width: @hbw;
+
+      .h_icon;
+      .h_fs {
+        text-align: justify;
+        text-align-last: justify;
+        .h_zc{
+          background: #000000;
+        }
+      }
+      .margin(44px);
+      a{
+       display: inline-block;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+      a:hover{
+        opacity:0.6;
+      }
+      .h_ss{
+        text-align: justify;
+        height:44px;
+        a{
+          display: inline-block;
+        }
+        a:hover{
+          opacity: 1;
+        }
+        .ss_sr{
+          width:66.666666%;
+        }
+        .ss_inp:focus{
+          outline: none;
+          color:#fff;
+        }
+        .ss_inp{
+          padding-left: 25px;
+          width: 86%;
+          background: #000;
+          color: white;
+          border: 0;
+        }
+      }
+    }
+
+  }
+
+  @media screen and (min-width: 768px) {
+    .h_fs{
+      display: block;
+    }
+    .h_sfs{
+      display: none;
+
+    }
+    .h_zhong {
+      width: @hsw;
+      .h_icon;
+      .h_fs {
+        text-align: justify;
+        text-align-last: justify;
+      }
+      .margin(44px);
+      .h_zc a{
+        display: inline-block;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+      a:hover{
+        opacity:0.6;
+      }
+      .h_ss{
+        text-align: justify;
+        height:44px;
+        a{
+          display: inline-block;
+        }
+        a:hover{
+          opacity: 1;
+        }
+        .ss_sr{
+          width:66.666666%;
+        }
+        .ss_inp:focus{
+          outline: none;
+          color:#fff;
+        }
+        .ss_inp{
+          padding-left: 25px;
+          width: 86%;
+          background: #000;
+          color: white;
+          border: 0;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .h_fs{
+      display: none;
+    }
+    .h_sfs{
+      display: block;
+    }
+      .h_sfs {
+        text-align: justify;
+        text-align-last: justify;
+      }
+      .margin(44px);
+      a{
+        display: inline-block;
+        color: #fff;
+        font-size: 14px;
+        padding-right: 10px;
+        padding-left: 10px;
+        vertical-align: top;
+       .sp(){
+          width:14px;
+          display: block;
+          height:1px;
+          background: #fff;
+        }
+        .sp1{
+          .sp;
+          margin: 16px 0 4px 0;
+        }
+        .sp2{
+          .sp;
+          margin: 2px 0 0 0;
+        }
+      }
+      a:hover{
+        opacity:0.6;
+      }
+    .h_icon;
+  }
+}
+.banner{
+  height:540px;
+  position: relative;
+  background: #000000;
+  .ban{
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    height:540px;
+    img{
+      height:540px;
+      width:100%;
+
+    }
+  }
+  .ban_l,.ban_r{
+    opacity: 0;
+    height:540px;
+    width: 20%;
+    position: absolute;
+  }
+  .ban_l{
+    left: 0;
+  }
+  .ban_r{
+    right:0;
+  }
+}
+.inn{
+  height:200px;
+  margin-top: 4px;
+  div{
+    border: 2px solid #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  a{
+    float: left;
+    width: 25%;
+    height: 100%;
+
+    .inn_nr{
+      height:100%;
+    }
+  }
+  .inn_bg1{
+    background: url("../img/macos_sierra_large.jpg") no-repeat 100% 100%;
+  }
+  .inn_bg2{
+    background: url("../img/ios_large.jpg") no-repeat  100% 100%;
+  }
+  .inn_bg3{
+    background: url("../img/iphone_upgrade_large.jpg") no-repeat  100% 100%;
+  }
+  .inn_bg4{
+    background: url("../img/watchos_large.jpg") no-repeat  100% 100%;
+  }
+}
+.link {
+  width: 75%;
+  line-height: 48px;
+  margin: 4px auto 0 4px;
+
+  .link_p {
+    font-size: 12px;
+    color: #333;
+  }
+  .link_inn {
+    height: 240px;
+    .text {
+      border-top: 1px solid #ccc;
+      padding-top: 30px;
+      width: 20%;
+      height: 240px;
+      float: left;
+      line-height: 1.2em;
+      p{
+        font-size: 12px;
+        font-weight: bolder;
+      }
+      a{
+        display: block;
+        font-size: 12px;
+        color: #aaa;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .inn_foot {
+    height: 100px;
+    margin-top: 24px;
+    .foot_fr {
+      font-size: 12px;
+      color: #333;
+      border-bottom: 1px solid #ccc;
+      a {
+        color: #0070c9;
+      }
+      a:hover {
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+    .foot_sec {
+      font-size: 12px;
+      color: #333;
+      a {
+        color: #666;
+      }
+      a:hover {
+        color: #999;
+        text-decoration: underline;
+      }
+    }
+    .foot_th {
+      font-size: 12px;
+      color: #333;
+      line-height: 1.2em;
+      a {
+        color: #666;
+      }
+      a:hover {
+        color: #999;
+        text-decoration: underline;
+      }
+    }
+  }
+}
